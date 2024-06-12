@@ -1,17 +1,21 @@
 package actividad4;
 
-public class PorcionQueso extends PorcionExtra{
-    public PorcionQueso(IPedido pedido, double precio) {
-        super(pedido, precio);
+public class PorcionQueso extends PorcionAdicional{
+    private Combo combo;
+    private double precio;
+
+    public PorcionQueso(Combo combo, double precio) {
+        this.combo = combo;
+        this.precio = precio;
     }
 
     @Override
     public String descripcion() {
-        return this.pedido.descripcion() + "\nPorcion adicional: Queso";
+        return combo.descripcion() + " - Porcion Adicional -> Queso";
     }
 
     @Override
     public double precio() {
-        return this.pedido.precio() + this.precio;
+        return this.precio + this.combo.precio();
     }
 }

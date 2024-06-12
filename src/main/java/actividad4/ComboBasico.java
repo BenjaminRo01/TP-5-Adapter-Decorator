@@ -1,17 +1,16 @@
 package actividad4;
 
-public class ComboBasico extends Combo{
-    public ComboBasico(IPedido pedido, double precio) {
-        super(pedido, precio);
+public class ComboBasico implements Combo{
+    private double precio;
+    public ComboBasico(double precio) {
+        this.precio = precio;
     }
     @Override
     public String descripcion() {
-        return this.pedido.descripcion()
-                + "\nCombo simple: Papas medianas + Hamburguesa simple";
+        return "\n- Combo Básico contiene -> Papas chicas (x1), Hamburguesa simple (x1) y Coca-cola (x1)";
     }
-
     @Override
     public double precio() {
-        return this.pedido.precio() + this.precio;
+        return this.precio;
     }
 }
