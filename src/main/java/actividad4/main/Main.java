@@ -1,6 +1,9 @@
 package actividad4.main;
 
-import actividad4.*;
+import actividad4.model.ComboBasico;
+import actividad4.model.ComboEspecial;
+import actividad4.model.Pedido;
+import actividad4.model.PedidoBuilder;
 
 public class Main {
     public static void main(String[] args) {

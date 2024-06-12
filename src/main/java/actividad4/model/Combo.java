@@ -1,4 +1,4 @@
-package actividad4;
+package actividad4.model;
 
 public interface Combo {
     String descripcion();

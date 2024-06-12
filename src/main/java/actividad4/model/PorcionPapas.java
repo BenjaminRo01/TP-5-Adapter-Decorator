@@ -1,4 +1,4 @@
-package actividad4;
+package actividad4.model;
 
 public class PorcionPapas extends PorcionAdicional{
     private Combo combo;

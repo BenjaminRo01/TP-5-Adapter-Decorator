@@ -1,6 +1,6 @@
-package actividad4;
+package actividad4.model;
 
-import actividad4.Combo;
+import actividad4.model.Combo;
 
 import java.util.ArrayList;
 import java.util.List;

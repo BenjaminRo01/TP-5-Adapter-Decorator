@@ -1,4 +1,4 @@
-package actividad4;
+package actividad4.model;
 
 public class ComboEspecial implements Combo{
     private double precio;

@@ -1,17 +1,17 @@
-package actividad4;
+package actividad4.model;
 
-public class PorcionQueso extends PorcionAdicional{
+public class PorcionCarne extends PorcionAdicional{
     private Combo combo;
     private double precio;
 
-    public PorcionQueso(Combo combo, double precio) {
+    public PorcionCarne(Combo combo, double precio) {
         this.combo = combo;
         this.precio = precio;
     }
 
     @Override
     public String descripcion() {
-        return combo.descripcion() + " - Porcion Adicional -> Queso";
+        return combo.descripcion() + " - Porcion Adicional -> Carne";
     }
 
     @Override
